@@ -6,5 +6,4 @@ public class ClassRoom {
     // also has a teacher
     // might? have a jr. teacher
 
-
 }
