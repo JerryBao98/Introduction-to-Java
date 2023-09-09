@@ -3,10 +3,14 @@ package people;
 public class Student {
     // name
     // grade
-    private final String name;
+    private String name;
 
     public Student(String name) {
         this.name = name;
+    }
+
+    public void setName(String name) {
+        this.name = name
     }
 
     public String getName() {
