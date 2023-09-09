@@ -3,14 +3,27 @@ package people;
 public class Teacher {
     // name
     private String name;
-    public Teacher(String name) {
+    private String id;
+
+    public Teacher(String name, String id) {
         this.name = name;
+        this.id = id;
     }
+
     public String getName() {
         return name;
     }
+    
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
     // subject
     // id
