@@ -4,10 +4,12 @@ public class Teacher {
     // name
     private String name;
     private String id;
+    private String subject;
 
-    public Teacher(String name, String id) {
+    public Teacher(String name, String id, String subject) {
         this.name = name;
         this.id = id;
+        this.subject = subject;
     }
 
     public String getName() {
@@ -25,7 +27,12 @@ public class Teacher {
     public void setId(String id) {
         this.id = id;
     }
-    // subject
-    // id
-    // we may also have jr teachers?
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
 }
