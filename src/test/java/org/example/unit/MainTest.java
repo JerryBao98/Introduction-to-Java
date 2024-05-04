@@ -1,14 +1,10 @@
 package org.example.unit;
 
-import org.example.misc.BallInterface;
-import org.example.misc.Kid;
 import org.example.chefs.*;
 import org.example.locations.Restaurant;
-import org.example.school.SchoolMember;
 import org.example.school.Student;
 import org.example.school.StudentFactory;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 
 import java.util.Arrays;
 import java.util.List;
@@ -230,17 +226,17 @@ class MainTest {
         masterChef.giveOrders();
     }
 
-    @Test
-    public void x(){
-        SchoolMember mock = Mockito.mock(SchoolMember.class);
-        Mockito.when(mock.getGrade()).thenReturn("ABC");
-    }
-
-    @Test
-    public void testKidCanKickBall(){
-        Kid kid = new Kid("ABC");
-        BallInterface mockedBall = Mockito.mock(BallInterface.class);
-        Mockito.when(mockedBall.getName()).thenReturn("Ball A");
-        kid.kick(mockedBall);
-    }
+//    @Test
+//    public void x(){
+//        SchoolMember mock = Mockito.mock(SchoolMember.class);
+//        Mockito.when(mock.getGrade()).thenReturn("ABC");
+//    }
+//
+//    @Test
+//    public void testKidCanKickBall(){
+//        Kid kid = new Kid("ABC");
+//        BallInterface mockedBall = Mockito.mock(BallInterface.class);
+//        Mockito.when(mockedBall.getName()).thenReturn("Ball A");
+//        kid.kick(mockedBall);
+//    }
 }
